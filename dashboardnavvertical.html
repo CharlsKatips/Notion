@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+	<!-- Google Font -->
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+
+	<!-------->
+
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+
+
+		.navMenu {
+			font-family: 'Advent Pro', sans-serif;
+			padding: 8px;
+			text-align: center;
+			margin: 7px auto;
+			width: fit-content;
+		}
+
+		.navMenu a {
+			color: #272727;
+			text-decoration: none;
+			text-transform: uppercase;
+			display: inline-block;
+			padding: 6px;
+		}
+
+		.background {
+			background-color: #ece5f0;
+		}
+
+		.border {
+			border: 1px solid #cccccc;
+
+		}
+
+		.navMenu a:hover {
+
+			color: #d09c0b;
+		}
+	</style>
+</head>
+
+<body>
+
+	<nav class="navMenu  border">
+		<a id="home" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-house"></i> Home</a>
+		<a id="planner" onclick="navigate(this.id)" href="#"> <i class="fa-regular fa-calendar"></i> Planner</a>
+		<a id="goals" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-bullseye"></i> Goals</a>
+		<a id="habits" onclick="navigate(this.id)" href="#"> <i class="fa-regular fa-circle-check"></i> Habits</a>
+		<a id="health" onclick="navigate(this.id)" href="#"> <i class="fa-regular fa-heart"></i> Health</a>
+		<a id="finance" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-money-bill-wave"></i> Finance</a>
+		<a id="career" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-briefcase"></i> Career</a>
+		<a id="hobbies" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-book"></i> Hobbies</a>
+		<a id="second_brain" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-brain"></i> Second Brain</a>
+		<a id="lifewiki" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-user-pen"></i> Lifewiki</a>
+
+
+
+	</nav>
+
+
+	<script>
+
+		let direction = "vertical";
+		if (direction === "vertical") {
+			document.head.insertAdjacentHTML("beforeend", `<style>.navMenu a {display: block; text-align:left; margin:7px} i{width:15px; margin-right:5px} .navMenu{margin:3px}</style>`)
+		}
+
+
+		function navigate(id) {
+
+			if (id == 'home')
+				window.open("https://www.notion.so/dashboard-af40c25c52e64d0a804b604921bbef70", '_blank').focus();
+			else if (id == "planner")
+				window.open("https://www.notion.so/Planner-086a57b6c8f14aac90ad7ceadf24fa21", '_blank').focus();
+			else if (id == "goals")
+				window.open("https://www.notion.so/2024-Goals-a38bc5a793aa458dadbf30ec938b4f0e", '_blank').focus();
+			else if (id == "habits")
+				window.open("https://www.notion.so/Habits-da95e3c89b4c4448ac63f55ad21c1172", '_blank').focus();
+			else if (id == "health")
+				window.open("https://www.notion.so/Health-3de030325e364be2a79d9725c09f9e32", '_blank').focus();
+			else if (id == "finance")
+				window.open("https://www.notion.so/Finance-e88e70b5d2134014b0cd2b50dedb4e6e", '_blank').focus();
+			else if (id == "career")
+				window.open("https://www.notion.so/Career-1ac9efc4059e4f679b2c9b025fc34866", '_blank').focus();
+			else if (id == "hobbies")
+				window.open("https://www.notion.so/Hobbies-31e633a373fa41b3905b939d17188e13", '_blank').focus();
+			else if (id == "second_brain")
+				window.open("https://www.notion.so/Second-Brain-382b396177cd4ccd95a05c3e3cee80ab", '_blank').focus();
+			else if (id == "lifewiki")
+				window.open("https://www.notion.so/Lifewiki-86c6d60f5254408a91f6e4bf87694890", '_blank').focus();
+
+		}
+	</script>
+
+
+</body>
+
+</html>
